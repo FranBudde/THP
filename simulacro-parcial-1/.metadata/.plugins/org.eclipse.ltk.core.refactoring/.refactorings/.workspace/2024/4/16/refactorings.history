@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;SIMULACION_PARCIAL&apos; to &apos;BE-THPA_BUDDEMEYER_IZZO_FRANCISCO&apos;&#x0D;&#x0A;- Original element: &apos;SIMULACION_PARCIAL&apos;&#x0D;&#x0A;- Renamed element: &apos;SIMULACION_PARCIAL&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;SIMULACION_PARCIAL&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=SIMULACION_PARCIAL" name="BE-THPA_BUDDEMEYER_IZZO_FRANCISCO" references="true" stamp="1713219661479" version="1.0"/>
+</session>
