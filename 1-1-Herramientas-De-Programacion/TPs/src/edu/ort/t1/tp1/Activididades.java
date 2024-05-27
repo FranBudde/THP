@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.text.DecimalFormat;
 import edu.ort.t1.tp1.PersonasAporte;
-import edu.ort.t1.tp1.MontañarusaPersonas;
+import edu.ort.t1.tp1.MontaÃ±arusaPersonas;
 
 public class Activididades {
 	private static Scanner input = new Scanner(System.in);
@@ -119,7 +119,7 @@ public class Activididades {
 							break;
 						}
 						catch(NumberFormatException error){
-							System.err.println("Debes ingresar un número ");
+							System.err.println("Debes ingresar un nï¿½mero ");
 						}
 					}while (true);
 					
@@ -238,7 +238,7 @@ public class Activididades {
 		int num2 = Integer.parseInt(input.nextLine());
 		int tercerAngulo = 180 - ( num1 + num2 ); 
 		
-		System.out.print("El tercer angulo interior es: " + tercerAngulo + "°");
+		System.out.print("El tercer angulo interior es: " + tercerAngulo + "ï¿½");
 	}
 
 	public static void actividad_10 () {
@@ -311,7 +311,7 @@ public class Activididades {
 	}
 	
 	public static void actividad_14 () {
-		MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
+		MontaÃ±arusaPersonas ingresantes[] = new MontaÃ±arusaPersonas[4];
 		
 		String name;
 		float altura;
@@ -330,7 +330,7 @@ public class Activididades {
 			System.out.print("Ingresa la edad de la persona " + ( i + 1 ) + ": " );
 			edad = Integer.parseInt(input.nextLine());
 			
-			ingresantes[i] = new MontañarusaPersonas(name, altura, edad);
+			ingresantes[i] = new MontaÃ±arusaPersonas(name, altura, edad);
 			System.out.print("");
 		}
 		
@@ -338,14 +338,14 @@ public class Activididades {
 		
 		for (int i = 0; i < ingresantes.length; i++) {
 			if(ingresantes[i].getEdad() >= edadMinima && ingresantes[i].getAltura() >= alturaMinima){
-				System.out.println("El ingresante " + ingresantes[i].getNombre() + " puede pasar ya que tiene una altura de " + ingresantes[i].getAltura() + " y tiene " + ingresantes[i].getEdad() + " años");
+				System.out.println("El ingresante " + ingresantes[i].getNombre() + " puede pasar ya que tiene una altura de " + ingresantes[i].getAltura() + " y tiene " + ingresantes[i].getEdad() + " aï¿½os");
 			}
 		}
 		
 	}
 
 	public static void actividad_15 () {
-MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
+		MontaÃ±arusaPersonas ingresantes[] = new MontaÃ±arusaPersonas[4];
 		
 		String name;
 		float altura;
@@ -364,7 +364,7 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 			System.out.print("Ingresa la edad de la persona " + ( i + 1 ) + ": " );
 			edad = Integer.parseInt(input.nextLine());
 			
-			ingresantes[i] = new MontañarusaPersonas(name, altura, edad);
+			ingresantes[i] = new MontaÃ±arusaPersonas(name, altura, edad);
 			System.out.print("");
 		}
 		
@@ -372,7 +372,7 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 		
 		for (int i = 0; i < ingresantes.length; i++) {
 			if(ingresantes[i].getEdad() >= edadMinima || ingresantes[i].getAltura() >= alturaMinima){
-				System.out.println("El ingresante " + ingresantes[i].getNombre() + " puede pasar ya que tiene una altura de " + ingresantes[i].getAltura() + " y tiene " + ingresantes[i].getEdad() + " años");
+				System.out.println("El ingresante " + ingresantes[i].getNombre() + " puede pasar ya que tiene una altura de " + ingresantes[i].getAltura() + " y tiene " + ingresantes[i].getEdad() + " aï¿½os");
 			}
 		}
 	}
@@ -412,11 +412,11 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 		char genero = Character.toUpperCase(generoChar);
 			
 		if(( edad < EDAD_MINIMA || edad > EDAD_MAXIMA ) && ( genero != GENERO_MUJER || genero != GENERO_MASCULINO )){
-			System.out.print("edad fuera de rango o género inválido");
+			System.out.print("edad fuera de rango o gï¿½nero invï¿½lido");
 		} else if (genero == GENERO_MUJER && edad >= EDAD_JUBILACION_F || genero == GENERO_MASCULINO && edad >= EDAD_JUBILACION_M) {
 			System.out.print("Estas en la edad de jubilarte");
 		} else {
-			System.out.print("Aún no estás en la edad de jubilarte");
+			System.out.print("Aï¿½n no estï¿½s en la edad de jubilarte");
 		}
 		
 	}	
@@ -605,12 +605,12 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
         // Pedir al usuario que ingrese los valores para cada celda de la matriz
         for (int x = 0; x < matriz.length; x++) {
             for (int y = 0; y < matriz[x].length; y++) {
-                System.out.print("Ingresa el valor para la posición [" + x + "][" + y + "]: ");
+                System.out.print("Ingresa el valor para la posiciï¿½n [" + x + "][" + y + "]: ");
                 matriz[x][y] = Integer.parseInt(input.nextLine());
             }
         }
         
-        // Imprimir la matriz después de asignar valores
+        // Imprimir la matriz despuï¿½s de asignar valores
         System.out.println("Matriz ingresada:");
         for (int x = 0; x < matriz.length; x++) {
         	 System.out.println("|");
@@ -618,7 +618,7 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
                 System.out.print(matriz[x][y] + " ");
                 if (y!=matriz[x].length-1) System.out.print("\t"); //mientras " y " sea distinto al ultimo indice que tiene la matriz en la fila
             }
-            System.out.println("|"); // Nueva línea después de imprimir cada fila
+            System.out.println("|"); // Nueva lï¿½nea despuï¿½s de imprimir cada fila
         }
 		
 	}
@@ -735,17 +735,17 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 		char option;
 		
 		do {
-			System.out.print("¿Deseás continuar? [S/N]: ");
+			System.out.print("ï¿½Deseï¿½s continuar? [S/N]: ");
 			option = Character.toUpperCase(input.nextLine().charAt(0));
 			System.out.println(option);
 			
 		} while (option != SI && option != NO);
 		
-//		System.out.print("¿Deseás continuar? [S/N]: ");
+//		System.out.print("ï¿½Deseï¿½s continuar? [S/N]: ");
 //		option = Character.toUpperCase(input.nextLine().charAt(0));
 //		
 //		while (option != SI && option != NO) {
-//			System.out.print("¿Deseás continuar? [S/N]: ");
+//			System.out.print("ï¿½Deseï¿½s continuar? [S/N]: ");
 //			option = Character.toUpperCase(input.nextLine().charAt(0));
 //		}
 		
@@ -820,7 +820,7 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 
 			
 		} while ( name.charAt(0) != '*' );
-		System.out.print("La persona mas joves es: " + nameJoven + " y tiene " + edadjoven + " años");
+		System.out.print("La persona mas joves es: " + nameJoven + " y tiene " + edadjoven + " aï¿½os");
 	}
 
 	public static void actividad_36 () {
@@ -860,7 +860,7 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 
 	public static void actividad_38 () {
 		String admin = "admin";
-		String contraseña = "123456";
+		String contraseÃ±a = "123456";
 		int intentos = 3;
 		
 		do {
@@ -871,10 +871,10 @@ MontañarusaPersonas ingresantes[] = new MontañarusaPersonas[4];
 			
 			System.out.print("Ingresa tu usuario: ");
 			String user = input.nextLine();
-			System.out.print("Ingresa tu contraseña: ");
+			System.out.print("Ingresa tu contraseï¿½a: ");
 			String password = input.nextLine();
 			
-			if(user.equals(admin) && password.equals(contraseña)) {
+			if(user.equals(admin) && password.equals(contraseÃ±a)) {
 				System.out.println("Acceso concedido");
 				return;
 			}

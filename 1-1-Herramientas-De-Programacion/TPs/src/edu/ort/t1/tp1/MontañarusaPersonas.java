@@ -1,11 +1,11 @@
 package edu.ort.t1.tp1;
 
-public class MontañarusaPersonas {
+public class MontaÃ±arusaPersonas {
     private String nombre;
     private Float altura;
     private Integer edad;
     
-    public MontañarusaPersonas(String nombre, Float altura, Integer edad) {
+    public MontaÃ±arusaPersonas(String nombre, Float altura, Integer edad) {
         this.nombre = nombre;
         this.altura = altura;
         this.edad = edad;
